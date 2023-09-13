@@ -16,15 +16,16 @@ for (column = 0; column <= n; column++)
 product = row * column;
 if (column == 0)
 {
-printf("%d", product);
+printf("%2d", product);
 }
 else
 {
-printf(", %d", product / 100 > 0 ? product : (product / 10 > 0 ? product : product));
+printf(", %2d", product);
 }
 }
 printf("\n");
 }
 }
 }
+
 
