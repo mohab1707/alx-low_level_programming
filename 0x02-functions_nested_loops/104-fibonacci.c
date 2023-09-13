@@ -2,7 +2,8 @@
 /**
  * main - Entry point
  *
- * Description: Prints the first 98 Fibonacci numbers, separated by a comma and space.
+ * Description: Prints the first 98 Fibonacci numbers, 
+ * separated by a comma and space.
  *
  * Return: Always 0 (Success)
  */
