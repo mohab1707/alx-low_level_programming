@@ -1,4 +1,12 @@
 #include "main.h"
+/**
+ * main - Entry point
+ *
+ * Description: This is the entry point of the program.
+ * It prints "_putchar" followed by a new line and returns 0.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 _putchar('_');
