@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <math.h>
+/**
+ * Test
+ */
+int main(void)
+{
+long long number = 612852475143;
+long long largest_prime = -1;
+long long divisor = 2;
+while (number != 1)
+{
+if (number % divisor == 0)
+{
+largest_prime = divisor;
+number /= divisor;
+}
+else
+{
+divisor++;
+}
+}
+printf("%lld\n", largest_prime);
+return (0);
+}
