@@ -24,6 +24,6 @@ while (str[start] != '\0')
 {
 _putchar(str[start]);
 start++;
-}   
+}
 _putchar('\n');
 }
