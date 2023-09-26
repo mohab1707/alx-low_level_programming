@@ -25,5 +25,5 @@ return (h);
 }
 haystack = h + 1;
 }
-return (char *)0;
+return ((char *)0);
 }
