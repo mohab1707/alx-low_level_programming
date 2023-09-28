@@ -1,5 +1,22 @@
 #include "main.h"
 #include <stdio.h>
+
+/**
+ * str_len_recursive - Helper
+ * function to calculate the length
+ * of a string recursively.
+ * @s: The string to calculate the length of.
+ *
+ * Return: The length of the string.
+ */
+int str_len_recursive(char *s)
+{
+if (*s == '\0')
+{
+return (0);
+}
+return (1 + str_len_recursive(s + 1));
+}
 /**
  * is_palindrome_recursive - Helper
  * function to check if a string
@@ -33,10 +50,6 @@ return (0);
  */
 int is_palindrome(char *s)
 {
-int length = 0;
-while (s[length] != '\0')
-{
-length++;
-}
+int length = str_len_recursive(s);
 return (is_palindrome_recursive(s, 0, length - 1));
 }
