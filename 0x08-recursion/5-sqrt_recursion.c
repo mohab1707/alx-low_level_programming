@@ -27,7 +27,7 @@ return (sqrt_recursive(n, guess + 1));
  * @n: The number to calculate the
  * square root of.
  *
- * Return: The natural square 
+ * Return: The natural square
  * root if it exists, or -1 if not.
  */
 int _sqrt_recursion(int n)
