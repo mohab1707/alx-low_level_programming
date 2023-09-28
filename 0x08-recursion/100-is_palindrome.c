@@ -38,7 +38,7 @@ if (s[start] != s[end])
 {
 return (0);
 }
- return (is_palindrome_recursive(s, start + 1, end - 1));
+return (is_palindrome_recursive(s, start + 1, end - 1));
 }
 /**
  * is_palindrome - Determines
