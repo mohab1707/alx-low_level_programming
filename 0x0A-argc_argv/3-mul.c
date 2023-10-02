@@ -4,7 +4,8 @@
 /**
  * main - Entry point
  * @argc: Number of command-line arguments
- * @argv: Array containing command-line arguments
+ * @argv: Array containing
+ * command-line arguments
  *
  * Return: 0 on success, 1 on error
  */
