@@ -9,12 +9,13 @@
 void print_opcodes(int (*main_ptr)(int, char **), int bytes)
 {
 unsigned char *opcodes = (unsigned char *)main_ptr;
+ int i;
 if (bytes < 0)
 {
 printf("Error\n");
 exit(2);
 }
-for (int i = 0; i < bytes; i++)
+for (i = 0; i < bytes; i++)
 {
 printf("%02x", opcodes[i]);
 if (i < bytes - 1)
