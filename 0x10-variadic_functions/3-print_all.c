@@ -22,25 +22,35 @@ current_format = format[i];
 switch (current_format)
 {
 case 'c':
-    printf("%s%c", separator, va_arg(args, int));
-    break;
+{
+printf("%s%c", separator, va_arg(args, int));
+break;
+}
 case 'i':
-    printf("%s%d", separator, va_arg(args, int));
-    break;
+{
+printf("%s%d", separator, va_arg(args, int));
+break;
+}
 case 'f':
-    printf("%s%f", separator, (float)va_arg(args, double));
-    break;
+{
+printf("%s%f", separator, (float)va_arg(args, double));
+break;
+}
 case 's':
-    str = va_arg(args, char *);
-    if (str == NULL)
-      {
-	str = "(nil)";
-      }
-     printf("%s%s", separator, str);
-     break;
+{
+str = va_arg(args, char *);
+if (str == NULL)
+{
+str = "(nil)";
+}
+printf("%s%s", separator, str);
+break;
+}
 default:
-     i++;
-     continue;
+{
+i++;
+continue;
+}
 }
 separator = ", ";
 i++;
