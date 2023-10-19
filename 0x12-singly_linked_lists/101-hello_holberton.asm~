@@ -1,0 +1,11 @@
+section .data
+    format db "Hello, Holberton",0xA,0
+
+section .text
+    global _start
+
+_start:
+    ; Exit the program
+    mov rax, 60                ; syscall number for sys_exit
+    xor rdi, rdi               ; status code 0
+    syscall
